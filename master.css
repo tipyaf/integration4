@@ -1,37 +1,96 @@
 /*-------------GENERALE----------*/
-#page{
+
+body {
+  margin: 0;
+}
+#page {
   max-width: 2000px;
+  text-align: center;
 }
-#content-body{
+#content-body {
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.banner{
-  width: 100%;
-  height:500px;
+.banner {
+  height: 500px;
   background-image: url("images/banner.jpg");
   background-size: auto;
-
 }
-h1, h2, h3,h4, p, button, li,{
-  font-family: 'Quicksand', sans-serif;
+h1, h2, h3, h4, p, button, li {
+  font-family: 'Questrial', sans-serif;
 }
-h1{
+h1 {
   font-size: 56px;
+  /*font-family: 'Quicksand', sans-serif;*/
 }
-h2{
-  font-size:45px;
+h2 {
+  font-size: 45px;
   font-weight: bold;
 }
-h3{
+h3 {
   font-size: 26px;
   font-weight: bold;
 }
-h4{
+h4 {
   font-size: 14px;
   font-weight: bold;
 }
-
-button{
+button {
   background-color: #64ABD1;
   color: white;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-flex;
+  padding-right: 8px;
+  height: 50px;
+
+}
+li a:hover {
+  color: #2056ac;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+a {
+  color: white;
+}
+.bobottom {
+  border-bottom: 1px solid #CBCBCB;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+/*-------Header-----------*/
+
+header {
+  width: 100%;
+  background-color: #2056ac;
+  padding-top: 60px;
+}
+header i {
+  color: white;
+}
+header h1 {
+  color: white;
+  padding-bottom: 60px;
+}
+
+/*---------nav---------------*/
+
+nav {
+  height: 50px;
+}
+nav ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+li a {
+  text-decoration: none;
 }
