@@ -17,7 +17,7 @@ body {
   background-image: url("images/banner.jpg");
   background-size: auto;
 }
-h1, h2, h3, h4, p, button, li, .copyr {
+h1, h2, h3, h4, p, button, .menu-part, .copyr {
   font-family: 'Questrial', sans-serif;
 }
 h1 {
@@ -44,16 +44,14 @@ button {
   font-size: 16px;
   border: 0;
 }
-ul {
-  list-style-type: none;
-}
-li {
+
+.menu-part {
   /*width: 100px;*/
   height: 50px;
   display: inline-flex;
   padding-right: 8px;
 }
-li a:hover {
+.menu-part a:hover {
   color: #2056ac;
   background-color: #fff;
   border-top-right-radius: 10px;
@@ -76,7 +74,7 @@ p{
 header {
   width: 100%;
   background-color: #2056ac;
-  padding-top: 100px;
+  padding-top: 10%;
 }
 header i {
   color: white;
@@ -98,16 +96,22 @@ header h1 {
 
 nav {
   height: 50px;
+
 }
-nav ul {
+.menu {
   width: 50%;
-  display: flex;
+  display:table-cell;
   justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  vertical-align: middle;
 }
-li a {
+.menu-part a {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding-right: 20px;
 }
 
 
@@ -150,8 +154,8 @@ footer{
   font-size: 14px;
 }
 footer i{
-  width: 15px;
-  height: 15px;
+  width: 2%;
+  height: 2%;
   background-color: #4C93B9;
   padding: 10px;
   margin-top: 50px;
@@ -160,4 +164,23 @@ footer i{
 .foot-group{
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+
+
+/*-----responsive----*/
+@media screen and (max-width: 720px) {
+  header{
+    height: 400px;
+  }
+  .grid{
+    display:block;
+  }
+  .case{
+    width: 100%;
+  }
+  .banner{
+    display:none;
+  }
+
 }
