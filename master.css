@@ -6,8 +6,11 @@
   max-width: 1200px;
 }
 .banner{
+  width: 100%;
+  height:500px;
   background-image: url("images/banner.jpg");
   background-size: auto;
+
 }
 h1, h2, h3,h4, p, button, li,{
   font-family: 'Quicksand', sans-serif;
